@@ -12,7 +12,7 @@ export const auth = (req, res,next) => {
     return res.status(401).json("You are not authentitcated!");
   }
 };
-export const  = (req, res, next) => {
+export const verify  = (req, res, next) => {
   auth(req, res, () => {
     if (req.user.isAdmin) {
       next();
