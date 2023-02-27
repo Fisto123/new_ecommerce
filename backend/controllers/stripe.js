@@ -71,8 +71,8 @@ export const stripePayment = async (req, res) => {
     customer: customer.id,
     line_items,
     mode: "payment",
-    success_url: `http://localhost:3000/checkout_success`,
-    cancel_url: `http://localhost:3000/cart`,
+    success_url: `https://fistocommerce.netlify.app/checkout_success`,
+    cancel_url: `https://fistocommerce.netlify.app/cart`,
   });
 
   res.send({ url: session.url });
